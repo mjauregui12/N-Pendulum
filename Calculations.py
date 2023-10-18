@@ -2,7 +2,7 @@ import numpy as np
 from numpy import cos, sin, sum, pi
 from numpy.linalg import inv
 
-#Utilizes a Runge Kutta process in order to solve the equations of motion
+# Utilizes a Runge Kutta process in order to solve the equations of motion in the form M\ddot{Theta} = F, where M is our mass matrix, \ddot{Theta} is the acceleration matrix, and F is the force matrix.
 def G(Y, t):
     n = int(len(Y)/2)
     theta = np.array(Y[0:n])
